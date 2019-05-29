@@ -1,5 +1,5 @@
 --- 
-title: "Instructor Resources for Chromebook Data Science"
+title: "Instructor Resources for Cloud-based Data Science"
 author: "Aboozar Hadavand"
 date: "February 2019"
 site: bookdown::bookdown_site
@@ -7,7 +7,6 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
 
 # What is this book {-}
@@ -16,17 +15,17 @@ description: "This is a minimal example of using the bookdown package to write a
 **Note:** If you would like to contribute to the instructor resources, please contribute [here](here). If you have any questions or comments about this guide, you can contact us [here](http://jhudatascience.org/chromebookdatascience/contact.html).
 
 
-The following book provides additional resources to instructors who use Chromebook Data Science MOOCs as part of their curriculum for teaching data science. Chromebook Data Science is a result of a team of data scientists and biostatisticians at Johns Hopkins University School of Public Health. 
+The following book provides additional resources to instructors who use Cloud-based Data Science MOOCs as part of their curriculum for teaching data science. Cloud-based Data Science is a result of a team of data scientists and biostatisticians at Johns Hopkins University School of Public Health. 
 
-Chromebook Data Science (CBDS) is a free, massive open online educational offered through [Leanpub](https://leanpub.com/universities/set/jhu/chromebook-data-science) to help anyone who can read, write, and use a computer to move into data science. CBDS lets students do data science using only a web browser and cheap computers like [Chromebooks](https://www.google.com/chromebook).
+Cloud-based Data Science (CBDS) is a free, massive open online educational offered through [Leanpub](https://leanpub.com/universities/set/jhu/chromebook-data-science) to help anyone who can read, write, and use a computer to move into data science. CBDS lets students do data science using only a web browser and cheap computers like [Chromebooks](https://www.google.com/chromebook).
 
-CBDS program is entirely online and students can take it for free. Students get a certificate for each CBDS online class from Leanpub. There are currently 12 courses that are offered in the Chromebook Data Science Curriculum. Courses can be assigned as homeworks and therefore the teacher can flip the classroom and use the class time to work on projects and answering questions. However, the instructor can also use the class time to have students take the courses depending on tastes and school resources.
+CBDS program is entirely online and students can take it for free. Students get a certificate for each CBDS online class from Leanpub. There are currently 12 courses that are offered in the Cloud-based Data Science Curriculum. Courses can be assigned as homeworks and therefore the teacher can flip the classroom and use the class time to work on projects and answering questions. However, the instructor can also use the class time to have students take the courses depending on tastes and school resources.
 
 
 
 Course  | Course Description | Leanpub Link
 ------------------------|--------------------------------------------------|-----------
-**Introduction to Chromebook Data Science** | This is the first class in the Chromebook Data Science series. Data science is one of the most exciting and fastest growing careers in the world. The goal of this series is to help people with no background and limited resources transition into data science. The only pre-requisites are a computer with a web browser and the ability to type and follow instructions. We guide you through the rest. | [Course 0](https://leanpub.com/universities/courses/jhu/cbds-intro)
+**Introduction to Cloud-based Data Science** | This is the first class in the Cloud-based Data Science series. Data science is one of the most exciting and fastest growing careers in the world. The goal of this series is to help people with no background and limited resources transition into data science. The only pre-requisites are a computer with a web browser and the ability to type and follow instructions. We guide you through the rest. | [Course 0](https://leanpub.com/universities/courses/jhu/cbds-intro)
 **How to Use A Chromebook** | This course will introduce you to using a Chromebook. The Introduction and Setup course might sound simple, but it will set up the infrastructure for success with the later, more challenging courses. | [Course 1](https://leanpub.com/universities/courses/jhu/cbds-chromebook)
 **Google and the Cloud** | The Google and the Cloud course introduces using Google’s in-built apps, which form the fundamental backbone of a Chromebook. We’ll go step by step through the process to integrating these apps together to form your productivity workflow. | [Course 2](https://leanpub.com/universities/courses/jhu/cbds-google)
 **Organizing Data Science Projects** | Projects are central to the role of any data scientist. These lessons will discuss how to organize projects and the files that are part of each project and will introduce you to Markdown, a simple way to compile text documents to a standard format. | [Course 3](https://leanpub.com/universities/courses/jhu/cbds-organizing)

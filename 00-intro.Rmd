@@ -1,4 +1,4 @@
-# Course 0: Introduction to Chromebook Data Science {-#intro}
+# Course 0: Introduction to Cloud-based Data Science {-#intro}
 
 The instructor can use the following activities for this course:
 

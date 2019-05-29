@@ -5,21 +5,21 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Course 7: Data Visualization | Instructor Resources for Chromebook Data Science</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <title>Course 7: Data Visualization | Instructor Resources for Cloud-based Data Science</title>
+  <meta name="description" content="Course 7: Data Visualization | Instructor Resources for Cloud-based Data Science">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Course 7: Data Visualization | Instructor Resources for Chromebook Data Science" />
+  <meta property="og:title" content="Course 7: Data Visualization | Instructor Resources for Cloud-based Data Science" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Course 7: Data Visualization | Instructor Resources for Chromebook Data Science" />
+  <meta name="twitter:title" content="Course 7: Data Visualization | Instructor Resources for Cloud-based Data Science" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
   
 
 <meta name="author" content="Aboozar Hadavand">
@@ -52,7 +52,7 @@
 <style type="text/css">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -65,11 +65,13 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -130,7 +132,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>What is this book</a></li>
-<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Course 0: Introduction to Chromebook Data Science</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Course 0: Introduction to Cloud-based Data Science</a></li>
 <li class="chapter" data-level="" data-path="chromebook.html"><a href="chromebook.html"><i class="fa fa-check"></i>Course 1: How to Use a Chromebook</a></li>
 <li class="chapter" data-level="" data-path="google.html"><a href="google.html"><i class="fa fa-check"></i>Course 2: Google and the Cloud</a></li>
 <li class="chapter" data-level="" data-path="organizing.html"><a href="organizing.html"><i class="fa fa-check"></i>Course 3: Organizing Data Science Projects</a></li>
@@ -138,6 +140,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html"><i class="fa fa-check"></i>Course 5: Introduction to R</a><ul>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-1-installing-and-uninstalling-packages"><i class="fa fa-check"></i>Exercise 1: Installing and Uninstalling Packages</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-2-using-the-script-editor"><i class="fa fa-check"></i>Exercise 2: Using the script editor</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-basic-commands-in-r"><i class="fa fa-check"></i>Exercise XX: Basic Commands in R</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-creating-a-data-frame"><i class="fa fa-check"></i>Exercise XX: Creating a Data Frame</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-creating-lists-in-r"><i class="fa fa-check"></i>Exercise XX: Creating Lists in R</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-missing-values-in-r"><i class="fa fa-check"></i>Exercise XX: Missing Values in R</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-4-reverse-a-string-function"><i class="fa fa-check"></i>Exercise 4: Reverse a String Function</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-5-other-short-exercises"><i class="fa fa-check"></i>Exercise 5: Other Short Exercises</a></li>
 </ul></li>
@@ -168,7 +174,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Instructor Resources for Chromebook Data Science</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Instructor Resources for Cloud-based Data Science</a>
           </h1>
         </div>
 
@@ -192,21 +198,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 champs &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="dt">file =</span> <span class="st">&quot;./data/nba/championsdata.csv&quot;</span>)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
-##   .default = col_integer(),
-##   Team = col_character(),
-##   FGP = col_double(),
-##   TPP = col_double(),
-##   FTP = col_double()
+##   .default = col_double(),
+##   Team = col_character()
 ## )</code></pre>
 <pre><code>## See spec(...) for full column specifications.</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r">runners &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="dt">file =</span> <span class="st">&quot;./data/nba/runnerupsdata.csv&quot;</span>)</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
-##   .default = col_integer(),
-##   Team = col_character(),
-##   FGP = col_double(),
-##   TPP = col_double(),
-##   FTP = col_double()
+##   .default = col_double(),
+##   Team = col_character()
 ## )
 ## See spec(...) for full column specifications.</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># fix the heat and warriors</span>
@@ -221,21 +221,21 @@ runners &lt;-<span class="st"> </span>runners <span class="op">%&gt;%</span>
 <span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Team =</span> <span class="kw">ifelse</span>(Team <span class="op">==</span><span class="st"> &quot;&#39;Heat&#39;&quot;</span>,<span class="st">&quot;Heat&quot;</span>,Team)) <span class="op">%&gt;%</span>
 <span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Win =</span> <span class="kw">as.factor</span>(Win)) <span class="op">%&gt;%</span>
 <span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Home =</span> <span class="kw">as.factor</span>(Home))
-<span class="co">## bind the two data sets together</span>
-<span class="co">## and add a column that shows champions vs. runnerups call it rank</span>
+## bind the two data sets together
+## and add a column that shows champions vs. runnerups call it rank
 allteams &lt;-<span class="st"> </span><span class="kw">bind_rows</span>(<span class="st">&quot;Champion&quot;</span> =<span class="st"> </span>champs, <span class="st">&quot;Runner&quot;</span> =<span class="st"> </span>runners, <span class="dt">.id =</span> <span class="st">&quot;rank&quot;</span>)</code></pre>
 <p>After importing and wrangling the data, ask your students to figure out whether <em>champion</em> teams are likely to score more at home or away. Ask them to write the code in a pipe and present the table using the <strong>knitr</strong> package.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co">## loading the knitr package</span>
+<pre class="sourceCode r"><code class="sourceCode r">## loading the knitr package
 <span class="kw">library</span>(knitr)
-<span class="co">## does home has an advantage</span>
+## does home has an advantage
 allteams <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="co">## first filtering so we only look at champion teams</span>
+<span class="st">    </span>## first filtering so we only look at champion teams
 <span class="st">    </span><span class="kw">filter</span>(rank <span class="op">==</span><span class="st"> &quot;Champion&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="co">## grouping by the variable home</span>
+<span class="st">    </span>## grouping by the variable home
 <span class="st">    </span><span class="kw">group_by</span>(Home) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="co">## calculating the average of points scored</span>
+<span class="st">    </span>## calculating the average of points scored
 <span class="st">    </span><span class="kw">summarise</span>(<span class="dt">avg =</span> <span class="kw">mean</span>(PTS)) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="co">## presenting the table using the knitr package</span>
+<span class="st">    </span>## presenting the table using the knitr package
 <span class="st">    </span><span class="kw">kable</span>(<span class="st">&quot;html&quot;</span>)</code></pre>
 <table>
 <thead>
@@ -268,19 +268,19 @@ avg
 </tbody>
 </table>
 <p>Ask your students what this means. To make the table above make more sense, ask your students to use the appropriate function for changing factor levels so that the column <code>Home</code> is equal to <code>Home</code> if its value is <code>1</code> and is equal to <code>Away</code> if its value is <code>0</code>. Your students should use the function <code>fct_recode()</code> in order to do that. Now they know that champion teams on average score 98.2 points at away games and 103.3 points at home games.</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co">## loading the knitr package</span>
+<pre class="sourceCode r"><code class="sourceCode r">## loading the knitr package
 <span class="kw">library</span>(knitr)
-<span class="co">## does home has an advantage</span>
+## does home has an advantage
 allteams <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="co">## first filtering so we only look at champion teams</span>
+<span class="st">    </span>## first filtering so we only look at champion teams
 <span class="st">    </span><span class="kw">filter</span>(rank <span class="op">==</span><span class="st"> &quot;Champion&quot;</span>) <span class="op">%&gt;%</span>
-<span class="st">    </span><span class="co">## changing factor levels so they mean better</span>
+<span class="st">    </span>## changing factor levels so they mean better
 <span class="st">    </span><span class="kw">mutate</span>(<span class="dt">Home =</span> <span class="kw">fct_recode</span>(Home, <span class="dt">Home =</span> <span class="st">&quot;1&quot;</span>, <span class="dt">Away =</span> <span class="st">&quot;0&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="co">## grouping by the variable home</span>
+<span class="st">    </span>## grouping by the variable home
 <span class="st">    </span><span class="kw">group_by</span>(Home) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="co">## calculating the average of points scored</span>
+<span class="st">    </span>## calculating the average of points scored
 <span class="st">    </span><span class="kw">summarise</span>(<span class="dt">avg =</span> <span class="kw">mean</span>(PTS)) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">    </span><span class="co">## presenting the table using the knitr package</span>
+<span class="st">    </span>## presenting the table using the knitr package
 <span class="st">    </span><span class="kw">kable</span>(<span class="st">&quot;html&quot;</span>)</code></pre>
 <table>
 <thead>
@@ -317,24 +317,24 @@ Home
 <span class="st">    </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&#39;identity&#39;</span>) <span class="op">+</span>
 <span class="st">    </span><span class="kw">ggtitle</span>(<span class="st">&quot;NBA Finals, 1980-2018&quot;</span>) <span class="op">+</span>
 <span class="st">    </span><span class="kw">ylab</span>(<span class="st">&#39;Average Three Point Field Goals&#39;</span>) </code></pre>
-<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-60-1.png" width="672" /></p>
 <p>Now, ask them two repeat the pervious graph but this time, have the bar plot (with different colors) for champion and runner up teams. In other words, they will have to use the argument <code>fill</code> and make it equal to the newly created column <code>rank</code>. Then ask them to interpret the graph. What is obvious is that champion teams do a much better job at three-pointers.</p>
 <pre class="sourceCode r"><code class="sourceCode r">p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> allteams, <span class="kw">aes</span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> TP, <span class="dt">fill =</span> rank)) <span class="op">+</span><span class="st"> </span>
 <span class="st">    </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&#39;identity&#39;</span>) <span class="op">+</span>
 <span class="st">    </span><span class="kw">ggtitle</span>(<span class="st">&quot;NBA Finals, 1980-2018&quot;</span>) <span class="op">+</span>
 <span class="st">    </span><span class="kw">ylab</span>(<span class="st">&#39;Average Three Point Field Goals&#39;</span>)
 p</code></pre>
-<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-61-1.png" width="672" /></p>
 <p>Now, ask them to find the right function in <strong>ggplot2</strong> that makes the Y axix ticks (the years) with an angle (45 degrees). They will have to use the <code>theme()</code> argument and inside it they will have to use the <code>element_text()</code> function to specify the angle.</p>
 <pre class="sourceCode r"><code class="sourceCode r">p <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">angle=</span><span class="dv">45</span>, <span class="dt">hjust =</span> <span class="dv">1</span>, <span class="dt">vjust =</span> <span class="dv">1</span>))</code></pre>
-<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-62-1.png" width="672" /></p>
 <p>In the last exercises, we are going to work with scatter plots. Ask your students have a scatter plot with number of 3 pointers per game on the vertical axis and year on the horizontal axis. Note that the two columns they need to use are <code>TP</code> and <code>Year</code>. Ask them to have two different colors for champions and runner ups. Ask them to make the point sizes equal to 1.</p>
 <pre class="sourceCode r"><code class="sourceCode r">p2 =<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> allteams, <span class="kw">aes</span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> TP, <span class="dt">color =</span> rank)) <span class="op">+</span>
 <span class="st">    </span><span class="kw">geom_point</span>(<span class="dt">size =</span> <span class="dv">1</span>) <span class="op">+</span>
 <span class="st">    </span><span class="kw">ylab</span>(<span class="st">&#39;3 Pointers per game&#39;</span>)
 
 p2</code></pre>
-<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-63-1.png" width="672" /></p>
 <p>Your students are now required to use the <code>geom_smooth()</code> function from the <strong>ggplot2</strong> package. This function help your students in seeing patterns. This is an example of the <code>geom_smooth()</code> function.</p>
 <div class="figure">
 <img src="files/07_visualization_geom_smooth.png" alt="geom_smooth() function, linear approximation" />
@@ -343,7 +343,7 @@ p2</code></pre>
 <p>When using <code>geom_smooth()</code>, the argument <code>method</code> has to be specified otherwise its default value will be used. Ask your students to set <code>method</code> as <code>'loess'</code>). The shaded areas around the lines are the confidence intervals which can be disabled by using the argument <code>se = FALSE</code>.</p>
 <p>geom_smooth() and stat_smooth() are effectively aliases: they both use the same arguments. Use stat_smooth() if you want to display the results with a non-standard geom. Ask students what the two lines suggest? What is the trend over time?</p>
 <pre class="sourceCode r"><code class="sourceCode r">p2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&#39;loess&#39;</span>)</code></pre>
-<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+<p><img src="cbds_instructors_files/figure-html/unnamed-chunk-64-1.png" width="672" /></p>
 
 </div>
 </div>

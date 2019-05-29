@@ -5,21 +5,21 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Course 5: Introduction to R | Instructor Resources for Chromebook Data Science</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <title>Course 5: Introduction to R | Instructor Resources for Cloud-based Data Science</title>
+  <meta name="description" content="Course 5: Introduction to R | Instructor Resources for Cloud-based Data Science">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Course 5: Introduction to R | Instructor Resources for Chromebook Data Science" />
+  <meta property="og:title" content="Course 5: Introduction to R | Instructor Resources for Cloud-based Data Science" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Course 5: Introduction to R | Instructor Resources for Chromebook Data Science" />
+  <meta name="twitter:title" content="Course 5: Introduction to R | Instructor Resources for Cloud-based Data Science" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
   
 
 <meta name="author" content="Aboozar Hadavand">
@@ -52,7 +52,7 @@
 <style type="text/css">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -65,11 +65,13 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -130,7 +132,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>What is this book</a></li>
-<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Course 0: Introduction to Chromebook Data Science</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Course 0: Introduction to Cloud-based Data Science</a></li>
 <li class="chapter" data-level="" data-path="chromebook.html"><a href="chromebook.html"><i class="fa fa-check"></i>Course 1: How to Use a Chromebook</a></li>
 <li class="chapter" data-level="" data-path="google.html"><a href="google.html"><i class="fa fa-check"></i>Course 2: Google and the Cloud</a></li>
 <li class="chapter" data-level="" data-path="organizing.html"><a href="organizing.html"><i class="fa fa-check"></i>Course 3: Organizing Data Science Projects</a></li>
@@ -141,6 +143,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-basic-commands-in-r"><i class="fa fa-check"></i>Exercise XX: Basic Commands in R</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-creating-a-data-frame"><i class="fa fa-check"></i>Exercise XX: Creating a Data Frame</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-creating-lists-in-r"><i class="fa fa-check"></i>Exercise XX: Creating Lists in R</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-missing-values-in-r"><i class="fa fa-check"></i>Exercise XX: Missing Values in R</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-4-reverse-a-string-function"><i class="fa fa-check"></i>Exercise 4: Reverse a String Function</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-5-other-short-exercises"><i class="fa fa-check"></i>Exercise 5: Other Short Exercises</a></li>
 </ul></li>
@@ -171,7 +174,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Instructor Resources for Chromebook Data Science</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Instructor Resources for Cloud-based Data Science</a>
           </h1>
         </div>
 
@@ -209,26 +212,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)</code></pre>
 <p>The package <strong>Devtools</strong> is hosted on CRAN, therefore, we don’t have to specify where the package is hosted. We just have to pass the name of the package to the function <code>install.packages()</code> to install it. Now ask them to load the package. Remind them that to load packages we use the following function:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">suppressWarnings</span>(<span class="kw">library</span>(devtools))</code></pre>
-<p>Note that when we load packages we don’t necessarily have to use quotation marks. It is recommended, however, that to use quotations for both <code>install.packages()</code> and <code>library()</code> functions. The package <strong>devtools</strong> makes package development easier. One of the applications of the package is that it allows us to install packages that are not on CRAN. Now ask students to install the package <strong>knockknockjokes</strong> from github using. The link to the Github repo of the package is <a href="www.github.com/psolymos/KnockKnockJokes">www.github.com/psolymos/KnockKnockJokes</a>. Ask them how they are supposed to install a package from Github.</p>
+<p>Note that when we load packages we don’t necessarily have to use quotation marks. It is recommended, however, that to use quotations for both <code>install.packages()</code> and <code>library()</code> functions. The package <strong>devtools</strong> makes package development easier. One of the applications of the package is that it allows us to install packages that are not on CRAN. Now ask students to install the package <strong>knockknockjokes</strong> from github using. The link to the Github repo of the package is <a href="www.github.com/psolymos/KnockKnockJokes" class="uri">www.github.com/psolymos/KnockKnockJokes</a>. Ask them how they are supposed to install a package from Github.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">suppressWarnings</span>(devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;psolymos/KnockKnockJokes&quot;</span>))</code></pre>
-<pre><code>## Downloading GitHub repo psolymos/KnockKnockJokes@master
-## from URL https://api.github.com/repos/psolymos/KnockKnockJokes/zipball/master</code></pre>
-<pre><code>## Installing KnockKnockJokes</code></pre>
-<pre><code>## &#39;/Library/Frameworks/R.framework/Resources/bin/R&#39; --no-site-file  \
-##   --no-environ --no-save --no-restore --quiet CMD INSTALL  \
-##   &#39;/private/var/folders/6c/94269x114tlc1x1c901c6_8m0000gn/T/Rtmp6OgbEa/devtools7a9a4e82a467/psolymos-KnockKnockJokes-5096f51&#39;  \
-##   --library=&#39;/Library/Frameworks/R.framework/Versions/3.4/Resources/library&#39;  \
-##   --install-tests</code></pre>
-<pre><code>## </code></pre>
+<pre><code>## Skipping install of &#39;KnockKnockJokes&#39; from a github remote, the SHA1 (5096f515) has not changed since last install.
+##   Use `force = TRUE` to force installation</code></pre>
 <p>Note that we have to specify where the package is hosted when we use the command <code>install_github()</code> from the package <strong>devtools</strong>. psolymos is the username of the user who developed the package and KnockKnockJokes is the name of the repository. Now ask students to load the package.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">suppressWarnings</span>(<span class="kw">library</span>(KnockKnockJokes))</code></pre>
 <p>This package is very simple. It basically tells you knock knock jokes. You can ask students to browse through the package documentation on <a href="https://github.com/psolymos/KnockKnockJokes">its Github repo</a> and see what function they should use for a joke. Here’s one for a random joke:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">KnockKnock</span>()</code></pre>
 <pre><code>## Knock-knock!
 ##  Who&#39;s there?
-## Stan.
-##  Stan who?
-## Stan back, I think I&#39;m going to sneeze!</code></pre>
+## Wayne.
+##  Wayne who?
+## Wayne, Wayne, go away, come again another day!</code></pre>
 <p>As an assignment (in class or at home), you can ask students to find an R package they find interesting and tell the class about it.</p>
 </div>
 <div id="exercise-2-using-the-script-editor" class="section level2 unnumbered">
@@ -333,11 +329,57 @@ dif</code></pre>
 <p>Ask them to call the first element of the list:</p>
 <pre class="sourceCode r"><code class="sourceCode r">about_me[[<span class="dv">1</span>]]</code></pre>
 <pre><code>## [1] &quot;New Mexico&quot; &quot;Vermont&quot;    &quot;Washington&quot; &quot;California&quot;</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co">## note that they can also call it by </span>
+<pre class="sourceCode r"><code class="sourceCode r">## note that they can also call it by 
 about_me[[<span class="st">&quot;places&quot;</span>]]</code></pre>
 <pre><code>## [1] &quot;New Mexico&quot; &quot;Vermont&quot;    &quot;Washington&quot; &quot;California&quot;</code></pre>
 <p>Now, ask then to add another sport that they like to the element <code>sports</code>.</p>
 <pre class="sourceCode r"><code class="sourceCode r">about_me[[<span class="st">&quot;sports&quot;</span>]][[<span class="dv">2</span>]] &lt;-<span class="st"> &quot;Volleyball&quot;</span></code></pre>
+</div>
+<div id="exercise-xx-missing-values-in-r" class="section level2 unnumbered">
+<h2>Exercise XX: Missing Values in R</h2>
+<div class="tip">
+<p>Level: Moderate</p>
+</div>
+<p>Ask your students to load the <code>airquality</code> dataset in R. Ask them to show the columns that exist in the data and find the dimension of the data.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">colnames</span>(airquality)</code></pre>
+<pre><code>## [1] &quot;Ozone&quot;   &quot;Solar.R&quot; &quot;Wind&quot;    &quot;Temp&quot;    &quot;Month&quot;   &quot;Day&quot;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dim</span>(airquality)</code></pre>
+<pre><code>## [1] 153   6</code></pre>
+<p>Ask them to look at the first 10 rows of the data:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(airquality, <span class="dv">10</span>)</code></pre>
+<pre><code>##    Ozone Solar.R Wind Temp Month Day
+## 1     41     190  7.4   67     5   1
+## 2     36     118   NA   72     5   2
+## 3     12     149 12.6   74     5   3
+## 4     18     313 11.5   62     5   4
+## 5     NA      NA 14.3   56     5   5
+## 6     28      NA 14.9   66     5   6
+## 7     23     299  8.6   65     5   7
+## 8     19      99 13.8   59     5   8
+## 9      8      19 20.1   61     5   9
+## 10    NA     194  8.6   69     5  10</code></pre>
+<p>Do they see any missing values in the first 10 rows? They should answer yes as the the first 10 rows clearly has some missing values. Now, ask them to use the appropriate function that checks whether the column <code>Temp</code> has missing values. How about the column <code>Ozone</code>?</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">any</span>(<span class="kw">is.na</span>(airquality<span class="op">$</span>Temp))</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">any</span>(<span class="kw">is.na</span>(airquality<span class="op">$</span>Ozone))</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<p>The column Ozone, contains mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island. What rows in the column <code>Ozone</code> have missing values</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">which</span>(<span class="kw">is.na</span>(airquality<span class="op">$</span>Ozone))</code></pre>
+<pre><code>##  [1]   5  10  25  26  27  32  33  34  35  36  37  39  42  43  45  46  52
+## [18]  53  54  55  56  57  58  59  60  61  65  72  75  83  84 102 103 107
+## [35] 115 119 150</code></pre>
+<p>Now, ask your students to use the appropriate function to calculate the average of the column <code>Ozone</code>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(airquality<span class="op">$</span>Ozone)</code></pre>
+<pre><code>## [1] NA</code></pre>
+<p>If they use the code above, the answer will be <code>NA</code>. Tell them that this is due to the missing values in the column and because of that, the function <code>mean()</code> does not calculate the average. For this, to see the average, they will have to use the argument <code>na.rm</code> and set it to <code>TRUE</code>. By doing this, they will tell R to ignore the missing values and only perform the function on the non-missing values.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(airquality<span class="op">$</span>Ozone, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</code></pre>
+<pre><code>## [1] 42.12931</code></pre>
+<p>Now, ask them to remove all the rows containing missing values from the entire data and save the new object as <code>airquality_nomissing</code>. Note that they should use the function <code>na.omit()</code>. What is the dimension of the new data?</p>
+<pre class="sourceCode r"><code class="sourceCode r">airquality_nomissing &lt;-<span class="st"> </span><span class="kw">na.omit</span>(airquality)
+<span class="kw">dim</span>(airquality_nomissing)</code></pre>
+<pre><code>## [1] 104   6</code></pre>
+<p>Finally, ask them to write code that will replace all values of the column <code>Wind</code> that are equal to <code>8.0</code> with <code>NA</code>.</p>
+<pre class="sourceCode r"><code class="sourceCode r">airquality<span class="op">$</span>Wind[airquality<span class="op">$</span>Wind <span class="op">==</span><span class="st"> </span><span class="fl">8.0</span>] &lt;-<span class="st"> </span><span class="ot">NA</span></code></pre>
 </div>
 <div id="exercise-4-reverse-a-string-function" class="section level2 unnumbered">
 <h2>Exercise 4: Reverse a String Function</h2>
@@ -451,6 +493,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

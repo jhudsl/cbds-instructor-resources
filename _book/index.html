@@ -5,21 +5,21 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Instructor Resources for Chromebook Data Science</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <title>Instructor Resources for Cloud-based Data Science</title>
+  <meta name="description" content="Instructor Resources for Cloud-based Data Science">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Instructor Resources for Chromebook Data Science" />
+  <meta property="og:title" content="Instructor Resources for Cloud-based Data Science" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Instructor Resources for Chromebook Data Science" />
+  <meta name="twitter:title" content="Instructor Resources for Cloud-based Data Science" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
   
 
 <meta name="author" content="Aboozar Hadavand">
@@ -52,7 +52,7 @@
 <style type="text/css">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -65,11 +65,13 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
 pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -130,7 +132,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>What is this book</a></li>
-<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Course 0: Introduction to Chromebook Data Science</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Course 0: Introduction to Cloud-based Data Science</a></li>
 <li class="chapter" data-level="" data-path="chromebook.html"><a href="chromebook.html"><i class="fa fa-check"></i>Course 1: How to Use a Chromebook</a></li>
 <li class="chapter" data-level="" data-path="google.html"><a href="google.html"><i class="fa fa-check"></i>Course 2: Google and the Cloud</a></li>
 <li class="chapter" data-level="" data-path="organizing.html"><a href="organizing.html"><i class="fa fa-check"></i>Course 3: Organizing Data Science Projects</a></li>
@@ -138,6 +140,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html"><i class="fa fa-check"></i>Course 5: Introduction to R</a><ul>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-1-installing-and-uninstalling-packages"><i class="fa fa-check"></i>Exercise 1: Installing and Uninstalling Packages</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-2-using-the-script-editor"><i class="fa fa-check"></i>Exercise 2: Using the script editor</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-basic-commands-in-r"><i class="fa fa-check"></i>Exercise XX: Basic Commands in R</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-creating-a-data-frame"><i class="fa fa-check"></i>Exercise XX: Creating a Data Frame</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-creating-lists-in-r"><i class="fa fa-check"></i>Exercise XX: Creating Lists in R</a></li>
+<li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-xx-missing-values-in-r"><i class="fa fa-check"></i>Exercise XX: Missing Values in R</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-4-reverse-a-string-function"><i class="fa fa-check"></i>Exercise 4: Reverse a String Function</a></li>
 <li class="chapter" data-level="" data-path="intro-r.html"><a href="intro-r.html#exercise-5-other-short-exercises"><i class="fa fa-check"></i>Exercise 5: Other Short Exercises</a></li>
 </ul></li>
@@ -168,7 +174,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Instructor Resources for Chromebook Data Science</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Instructor Resources for Cloud-based Data Science</a>
           </h1>
         </div>
 
@@ -177,16 +183,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">Instructor Resources for Chromebook Data Science</h1>
+<h1 class="title">Instructor Resources for Cloud-based Data Science</h1>
 <p class="author"><em>Aboozar Hadavand</em></p>
 <p class="date"><em>February 2019</em></p>
 </div>
 <div id="what-is-this-book" class="section level1 unnumbered">
 <h1>What is this book</h1>
-<p><strong>Note:</strong> If you would like to contribute to the instructor resources, please contribute <a href="here">here</a>. If you have any questions or comments about this guide, you can contact us <a href="http://jhudatascience.org/chromebookdatascience/contact.html">here</a>.</p>
-<p>The following book provides additional resources to instructors who use Chromebook Data Science MOOCs as part of their curriculum for teaching data science. Chromebook Data Science is a result of a team of data scientists and biostatisticians at Johns Hopkins University School of Public Health.</p>
-<p>Chromebook Data Science (CBDS) is a free, massive open online educational offered through <a href="https://leanpub.com/universities/set/jhu/chromebook-data-science">Leanpub</a> to help anyone who can read, write, and use a computer to move into data science. CBDS lets students do data science using only a web browser and cheap computers like <a href="https://www.google.com/chromebook">Chromebooks</a>.</p>
-<p>CBDS program is entirely online and students can take it for free. Students get a certificate for each CBDS online class from Leanpub. There are currently 12 courses that are offered in the Chromebook Data Science Curriculum. Courses can be assigned as homeworks and therefore the teacher can flip the classroom and use the class time to work on projects and answering questions. However, the instructor can also use the class time to have students take the courses depending on tastes and school resources.</p>
+<p><strong>Note:</strong> If you would like to contribute to the instructor resources, please contribute <a href="here" class="uri">here</a>. If you have any questions or comments about this guide, you can contact us <a href="http://jhudatascience.org/chromebookdatascience/contact.html">here</a>.</p>
+<p>The following book provides additional resources to instructors who use Cloud-based Data Science MOOCs as part of their curriculum for teaching data science. Cloud-based Data Science is a result of a team of data scientists and biostatisticians at Johns Hopkins University School of Public Health.</p>
+<p>Cloud-based Data Science (CBDS) is a free, massive open online educational offered through <a href="https://leanpub.com/universities/set/jhu/chromebook-data-science">Leanpub</a> to help anyone who can read, write, and use a computer to move into data science. CBDS lets students do data science using only a web browser and cheap computers like <a href="https://www.google.com/chromebook">Chromebooks</a>.</p>
+<p>CBDS program is entirely online and students can take it for free. Students get a certificate for each CBDS online class from Leanpub. There are currently 12 courses that are offered in the Cloud-based Data Science Curriculum. Courses can be assigned as homeworks and therefore the teacher can flip the classroom and use the class time to work on projects and answering questions. However, the instructor can also use the class time to have students take the courses depending on tastes and school resources.</p>
 <table>
 <colgroup>
 <col width="28%" />
@@ -202,8 +208,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Introduction to Chromebook Data Science</strong></td>
-<td>This is the first class in the Chromebook Data Science series. Data science is one of the most exciting and fastest growing careers in the world. The goal of this series is to help people with no background and limited resources transition into data science. The only pre-requisites are a computer with a web browser and the ability to type and follow instructions. We guide you through the rest.</td>
+<td><strong>Introduction to Cloud-based Data Science</strong></td>
+<td>This is the first class in the Cloud-based Data Science series. Data science is one of the most exciting and fastest growing careers in the world. The goal of this series is to help people with no background and limited resources transition into data science. The only pre-requisites are a computer with a web browser and the ability to type and follow instructions. We guide you through the rest.</td>
 <td><a href="https://leanpub.com/universities/courses/jhu/cbds-intro">Course 0</a></td>
 </tr>
 <tr class="even">
